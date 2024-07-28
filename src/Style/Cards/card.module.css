@@ -1,0 +1,71 @@
+.closeBtn{
+    display: none;
+    position: absolute;
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    margin-left: 210px;
+}
+
+.closeBtn::after{
+    content:'X';
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.cardSection {
+    margin: 20px;
+    width: 250px;
+}
+
+.cardSection:hover .closeBtn{
+    border-radius: 0px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff; /* Белый фон для карточки */
+    max-width: 250px; /* Максимальная ширина карточки */
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 150px; /* Высота изображения */
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрезка изображения для соответствия размерам контейнера */
+    display: block;
+}
+
+.word {
+    padding: 20px;
+    text-align: center;
+}
+
+.word h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.word p {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}

@@ -1,0 +1,88 @@
+.cardCreateSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.cardCreate {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formCreate form {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 300px;
+    height: 200px; /* Высота изображения */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.imgSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрезка изображения для соответствия размерам контейнера */
+    display: block;
+}
+
+.imgSection input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.wordsSection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.word, .wordTranslase {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #2794af;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(62, 187, 204);
+}

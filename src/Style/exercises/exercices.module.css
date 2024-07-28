@@ -1,0 +1,73 @@
+.exercices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.title h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.exercicesList {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listElem {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.listElem h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #218838;
+}
+
+.listElem p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.listElem .description {
+    font-size: 14px;
+    color: #969696;
+    margin-bottom: 10px;
+}
+
+.startBtn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.startBtn button {
+    padding: 10px 20px;
+    background-color: #1e6ec465;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 20%;
+}
+
+.startBtn button:hover {
+    background-color: #1e6ec4cc;
+}

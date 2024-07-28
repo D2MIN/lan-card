@@ -1,0 +1,141 @@
+.contentSection{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    /* background-color: rgb(226, 254, 230); */
+    padding: 50px;
+    max-width: 70vw;
+    font-family:monospace;
+    font-size: 15px;
+}
+
+.titleSection {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    text-align: center;
+}
+
+.titleHeader h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.titleHeader h1 strong {
+    color: #007BFF;
+}
+
+.titleHeader h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Стили для списков */
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 20px 150px;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    text-align: start;
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #333;
+}
+ul li:hover {
+    background-color: #007bff44;
+}
+
+/* Стили для примера использования */
+h2 {
+    font-size: 1.75em;
+    margin-top:50px;
+    color: #444;
+}
+
+/* Дополнительные стили для улучшения внешнего вида */
+.titleSection ul li::before {
+    content: "•";
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.start {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.startTitle {
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.startBtn {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #fff; 
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    animation: blink 1s infinite alternate;
+}
+
+.startBtn:hover {
+    background-color: #0056b3;
+    animation: blink 1s;
+    transform: scale(1.05);
+}
+
+@keyframes blink {
+    0% {
+       background-color: #000000d6;
+    }
+    100% {
+        background-color: #007bff;
+    }
+}
+
+/* Стили для адаптивности */
+@media (max-width: 600px) {
+    .titleSection {
+        padding: 10px;
+    }
+
+    .titleHeader h1 {
+        font-size: 2em;
+    }
+
+    .titleHeader h2 {
+        font-size: 1.25em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+}
