@@ -1,11 +1,10 @@
+import style from '../../../Style/exercises/translateTest/translateTest.module.css';
 import { useRef, useState } from 'react';
-import style from '../../Style/translateTest/translateTest.module.css';
-import { TranslateCard } from './TranslateCard';
+import { TranslateCard } from '../TranslateCard';
 import { useNavigate } from 'react-router-dom';
-import { CounterAnswer } from './CounterAnswer';
+import { CounterAnswer } from '../CounterAnswer';
 
-export function TranslateTest(){
-
+export function ReverseTranslate(){
     const navigate = useNavigate();
 
     const data = JSON.parse(localStorage.getItem('cards')); // Массив обьектов карточек
@@ -29,7 +28,7 @@ export function TranslateTest(){
         setCount(count+1)
         cardList.current = cardList.current.filter((el)=>el.id != card.id); // Уменьшаем количество карточек
         setCard(cardList.current[getRandom(cardList.current.length)]);  // Устанавливаем новуую карточку
-        if(answer.toLowerCase() == (card.wordTranslete).toLowerCase()){
+        if(answer.toLowerCase() == (card.word).toLowerCase()){
             countTrueAnswer.current = countTrueAnswer.current + 1;  // устанавливаем правильные ответы
         }
     }
@@ -39,7 +38,9 @@ export function TranslateTest(){
             <div className={style.translateTest}>
                 <div className={style.count}>{count-1}/{data.length}</div>
                 <div className={style.card}>
-                    {count > data.length ? <CounterAnswer count={countTrueAnswer.current} maxCount={data.length}/> : <TranslateCard card={card} translateType={'direct'}/>}
+                    {count > data.length ? 
+                        <CounterAnswer count={countTrueAnswer.current} maxCount={data.length}/> :
+                        <TranslateCard card={card} translateType={'reverse'}/>}
                 </div>
                 <div className={style.answer}>
                     {count > data.length ? <button className={style.exitButton} onClick={() => navigate('/exercices')}>Вернутся</button> : 

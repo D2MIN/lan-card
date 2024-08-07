@@ -21,22 +21,23 @@ export function Exercices(){
                             <h2>Обратный перевод слова</h2>
                             <p>В этом упражнении вам прийдется перевести слово с вашего языка на другой</p>
                             <div className={style.startBtn}>
-                                <Link><button>Начать</button></Link>
+                                <Link to={'./translate-reverse'}><button>Начать</button></Link>
                             </div>
                         </li>
                         <li className={style.listElem}>
                             <h2>Сапопставление</h2>
                             <p>В этом упражнении вам прийдется сопоставить карткочки с вашими словами</p>
+                            <p className={style.description}>Для этого упражнения нужно сделать побольше 3 карточек.</p>
                             <div className={style.startBtn}>
                                 <Link><button>Начать</button></Link>
                             </div>
                         </li>
                         <li className={style.listElem}>
                             <h2>Поиск карточки</h2>
-                            <p>В этом упражнении вам прийдется найти 1 карточку из 5 которая подходит вашему слову</p>
-                            <p className={style.description}>Для этого упражнения рекомендуем сделать побольше карточек.</p>
+                            <p>В этом упражнении вам прийдется найти 1 карточку из 3 которая подходит вашему слову</p>
+                            <p className={style.description}>Для этого упражнения нужно сделать побольше 3 карточек.</p>
                             <div className={style.startBtn}>
-                                <Link><button>Начать</button></Link>
+                                <Link to={'./findCards'}><button>Начать</button></Link>
                             </div>
                         </li>
                     </ul>

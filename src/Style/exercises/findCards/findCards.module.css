@@ -1,0 +1,142 @@
+.findCards{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.findCardSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: auto;
+    min-height: 370px;
+    min-width: 630px;
+}
+
+.findCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.imgConteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 30%;
+    height: 150px;
+    width: 230px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(150, 196, 255, 0.2);
+    border: 4px solid #f0f0f0;
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.active{
+    border: 4px solid #218838;
+    background-color: #218838;
+
+    .cardImg{
+        opacity: 0.7;
+    }
+}
+
+.cardImg:hover{
+    opacity: 0.8;
+}
+
+.imgConteiner:hover{
+    border: 4px solid #218838;
+}
+
+.answerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.word {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.buttonAnswerSection {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonAnswer {
+    padding: 10px 50px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #218838;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttonAnswer:hover {
+    background-color: #218837cb;
+}
+
+.buttonAnswer:active {
+    transform: scale(0.85);
+}
+
+.exitButton{
+    margin-top: 100px;
+    height: 50px;
+    width: 568px;
+    padding: 10px 50px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #218838;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.exitButton:hover{
+    background-color: #218837cb;
+}
+
+.count {
+    font-size: 18px;
+    color: #fff;
+    background-color: #218838;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

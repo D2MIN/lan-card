@@ -16,10 +16,33 @@
     text-align: center;
 }
 
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .title h1 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #333;
+}
+
+.popap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50%;
+    font-size: 14px;
+    color: #272727;
+}
+
+.popapActiv{
+    animation: popapAdd 1s infinite alternate;
+    background-color: rgba(74, 235, 74, 0.541);
+    border-radius: 20px;
 }
 
 .formCreate form {
@@ -85,4 +108,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: rgb(62, 187, 204);
+}
+
+
+@keyframes popapAdd{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
 }

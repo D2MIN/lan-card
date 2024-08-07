@@ -7,10 +7,19 @@ export function CardCreate(){
     const storage = useRef( jsonData == null? [] : jsonData );
     const [formData, setFormData] = useState({img:'',word:'',wordTranslete:'',});
 
+    const [popap,setPopap] = useState('');
+
     function submit(event){
         event.preventDefault();
-        storage.current.push({id:Math.random(), ...formData })
-        localStorage.setItem('cards', `${JSON.stringify(storage.current)}`)
+        storage.current.push({id:Math.random(), ...formData });
+        localStorage.setItem('cards', `${JSON.stringify(storage.current)}`);
+        setFormData({img:'',word:'',wordTranslete:'',});
+
+        setPopap('Карточка успешно создана');
+        setTimeout(()=>{
+            setPopap('');
+        },2000);
+
     }
 
     function changeForm(e){
@@ -22,7 +31,7 @@ export function CardCreate(){
     return(
         <div className={`${style.cardCreateSection} main`}>
             <div className={style.cardCreate}>
-                <div className={style.title}><h1>Время создать новую карточку</h1></div>
+                <div className={style.title}><h1>Время создать новую карточку</h1><p className={`${popap == ''?'':style.popapActiv} ${style.popap}`}>{popap}</p></div>
                 <div className={style.formCreate}>
                     <form onSubmit={submit} action="">
                         <div className={style.imgSection}>

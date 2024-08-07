@@ -1,4 +1,4 @@
-import style from "../../Style/translateTest/CounterAnswer.module.css";
+import style from "../../Style/exercises/translateTest/CounterAnswer.module.css";
 
 export function CounterAnswer({count, maxCount}){
     return(
